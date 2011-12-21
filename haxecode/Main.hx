@@ -36,14 +36,12 @@ class Controller_Welcome extends Controller_Template {
   }
   
   
-  public function action_index()
-	{
+  public function action_index() {
 		response.body('hello, world!');
 	}
 	
   
-  public function action_ciao()
-	{
+  public function action_ciao() {
     template.message = Request.factory("http://wwww.google.com").execute();
 	}
   
